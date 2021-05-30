@@ -12,11 +12,16 @@ class Stack<T> {
     public void push(T t) {
         ++head;
         stack.add(t);
+        System.out.println("Added " + t);
     }
 
     public void pop() {
-        stack.remove(head);
-        --head;
+        if (head>=0){
+            System.out.println("Removed " + stack.get(head));
+            stack.remove(head);
+            --head;
+        }
+        else System.out.println("No elements in the stack.");
     }
 
     public boolean isEmpty() {
