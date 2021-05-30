@@ -1,6 +1,7 @@
 import java.util.LinkedList;
 
 class Stack<T> {
+
     private int head;
     private LinkedList<T> stack;
 
